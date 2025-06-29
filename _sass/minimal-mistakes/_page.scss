@@ -576,3 +576,15 @@ body {
     }
   }
 }
+
+.layout--home .page__inner-wrap {
+  margin-top: 0; // No whitespace for mobile screens
+
+  @include breakpoint($medium) {
+    margin-top: 6em; // Add a small margin for medium screens
+  }
+
+  @include breakpoint($large) {
+    margin-top: 8em; // Add more space for larger screens
+  }
+}
